@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/help"
+        android:orderInCategory="100"
+        android:title="help"
+        android:showAsAction="never"
+        android:visible="true"/>
+    <item
+        android:id="@+id/venues"
+        android:orderInCategory="100"
+        android:title="venues"
+        android:showAsAction="never"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/location"
+        android:orderInCategory="100"
+        android:title="location"
+        android:showAsAction="never"
+        android:visible="true"/>
+    <item
+        android:id="@+id/settings"
+        android:orderInCategory="100"
+        android:title="settings"
+        android:showAsAction="never"
+        android:visible="true"/>
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:title="about"
+        android:showAsAction="never"
+        android:visible="true"/>
+
+
+
+
+</menu>
