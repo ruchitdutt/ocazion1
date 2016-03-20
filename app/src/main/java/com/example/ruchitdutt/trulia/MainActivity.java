@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     TextView textView;
-    EditText editText;
+
 
     TextView notSearch;
     ViewPager viewPager;
@@ -28,9 +28,9 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle(null);
         textView=(TextView)findViewById(R.id.textView2);
-        editText=(EditText)findViewById(R.id.editText);
+
         notSearch=(TextView)findViewById(R.id.textView3);
-        editText.setVisibility(View.GONE);
+
         textView.setVisibility(View.INVISIBLE);
         viewPager= (ViewPager)findViewById(R.id.view_pager);
         adapter= new CustomSwipeAdapter(this);
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     public void onhomeclick(View view){
         notSearch.setVisibility(View.VISIBLE);
         notSearch.setText("This will serve as the home page");
-        editText.setVisibility(View.GONE);
+
         textView.setVisibility(View.INVISIBLE);
 
 
@@ -51,19 +51,19 @@ public class MainActivity extends AppCompatActivity {
     public void onsearchclick(View view){
         textView.setVisibility(View.VISIBLE);
         textView.setText("Search");
-        editText.setVisibility(View.VISIBLE);
+
         notSearch.setVisibility(View.INVISIBLE);
 
     }
     public void userfeedback(View view){
-        editText.setVisibility(View.INVISIBLE);
+
         textView.setVisibility(View.INVISIBLE);
         notSearch.setVisibility(View.VISIBLE);
         notSearch.setText("Form for User feedback");
 
     }
     public void onheartclick(View view){
-        editText.setVisibility(View.GONE);
+
         textView.setVisibility(View.INVISIBLE);
         notSearch.setVisibility(View.VISIBLE);
         notSearch.setText("Favourite");
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_overflow, menu);
-        return true;
+        return false;
     }
 
     @Override
