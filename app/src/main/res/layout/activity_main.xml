@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,9 +18,9 @@
         android:layout_gravity="right"
         >
         <ImageButton
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="195dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="180dp"
             android:background="@drawable/homebutton"
             android:src="@drawable/ripple_effect"
             android:onClick="onhomeclick"
@@ -29,8 +29,8 @@
 
 
         <ImageButton
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:background="@drawable/search3"
             android:layout_marginLeft="05dp"
             android:src="@drawable/ripplforsearch"
@@ -39,25 +39,25 @@
             android:onClick="onsearchclick" />
         <ImageButton
 
-            android:layout_width="57dp"
-            android:layout_height="57dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:layout_marginLeft="05dp"
             android:background="@drawable/love1"
-
-
-
             android:src="@drawable/rippleforlove"
             android:adjustViewBounds="false"
-
             android:visibility="visible"
             android:onClick="onheartclick" />
 
     </android.support.v7.widget.Toolbar>
+
     <android.support.v4.view.ViewPager
         android:id="@+id/view_pager"
+        android:layout_marginTop="57dp"
         android:layout_height="150dp"
         android:layout_width="match_parent"
-        android:layout_weight="0.20"></android.support.v4.view.ViewPager>
+        android:layout_weight="0.20">
+
+    </android.support.v4.view.ViewPager>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -75,16 +75,6 @@
             android:textSize="60px"
             android:gravity="center"/>
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/editText"
-            android:hint="Search here..."
-            android:visibility="visible"
-            android:layout_alignBaseline="@+id/textView2"
-            android:layout_alignBottom="@+id/textView2"
-            android:layout_alignParentStart="true" />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -95,4 +85,4 @@
     </RelativeLayout>
 
 
-</LinearLayout>
+</FrameLayout>
